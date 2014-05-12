@@ -1,0 +1,21 @@
+{
+  "name": "node-mongo-cache",
+  "description": "Simple MongoDB Cache for nodejs",
+  "version": "1.0.0",
+  "author": "Bryant Williams <b.n.williams@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scien/node-mongo-cache.git"
+  },
+  "scripts": {
+    "start":    "cake start",
+    "stop":     "cake stop",
+    "test":     "cake test"
+  },
+  "dependencies": {
+    "coffee-script":  "1.7.x",
+    "deepmerge": "0.2.x",
+    "mongodb": "1.4.x"
+  },
+  "main": "./lib/index"
+}
