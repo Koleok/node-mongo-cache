@@ -9,8 +9,8 @@ cache = new MongoCache {
   user: 'admin'
 }
 
-cache.set 'hello', 'world', 10, (err, item) ->
-  console.log 'set', err, item
-  cache.get 'hello', (err, item) ->
-    console.log 'get', err, item
+cache.set 'hello', 'world', 10, (err, value) ->
+  console.log 'set', err, value
+  cache.get 'hello', (err, value) ->
+    console.log 'get', err, value
     process.exit 0

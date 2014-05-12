@@ -5,6 +5,7 @@
 npm install node-mongo-cache
 ```
 
+
 ## Examples
 ```CoffeeScript
 MongoCache = require 'node-mongo-cache'
@@ -17,12 +18,13 @@ cache = new MongoCache {
   user: 'admin'  
 }
 
-cache.set 'hello', 'world', 10, (err, item) ->
-  console.log 'set', err, item
-  cache.get 'hello', (err, item) ->
-    console.log 'get', err, item
+cache.set 'hello', 'world', 10, (err, value) ->
+  console.log 'set', err, value
+  cache.get 'hello', (err, value) ->
+    console.log 'get', err, value
   
 ```
+
 
 ## License
 ©2014 Bryant Williams under the [MIT license](http://www.opensource.org/licenses/mit-license.php):
@@ -32,5 +34,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
 
