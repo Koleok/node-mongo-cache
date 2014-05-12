@@ -1,5 +1,5 @@
 {
-  "name": "node-mongo-cache",
+  "name": "mongo-cache",
   "description": "Simple MongoDB Cache for nodejs",
   "version": "1.0.0",
   "author": "Bryant Williams <b.n.williams@gmail.com>",
