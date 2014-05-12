@@ -1,11 +1,11 @@
-# Simple MongoDB cache for node.js
+## Simple MongoDB cache for node.js
 
-# Install
+## Install
 ```bash
 npm install node-mongo-cache
 ```
 
-# Examples
+## Examples
 ```CoffeeScript
 MongoCache = require 'node-mongo-cache'
 
@@ -24,10 +24,7 @@ cache.set 'hello', 'world', 10, (err, item) ->
   
 ```
 
-
-
-
-# License
+## License
 ©2014 Bryant Williams under the [MIT license](http://www.opensource.org/licenses/mit-license.php):
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
