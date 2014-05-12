@@ -51,7 +51,7 @@ class exports.MongoCache
         return next err if err
         if item?.expires < Date.now()
           return @delete key, next
-        next null, item.value
+        next null, item?.value
 
   set: (key, value, ttl, next) ->
     @connect (err) =>
