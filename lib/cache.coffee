@@ -42,7 +42,8 @@ class exports.MongoCache
   delete: (key, next) ->
     @connect (err) =>
       return next err if err
-      @collection.remove {key: key}, {safe: true}, next
+      @collection.remove {key: key}, {safe: true}, (err, num_removed) ->
+        next err, null
 
   get: (key, next) ->
     @connect (err) =>

@@ -1,7 +1,7 @@
 {
   "name": "mongo-cache",
   "description": "Simple MongoDB Cache for nodejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Bryant Williams <b.n.williams@gmail.com>",
   "repository": {
     "type": "git",
