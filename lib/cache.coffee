@@ -61,7 +61,7 @@ class exports.MongoCache
       item = {
         key: key
         value: value
-        expires: Date.now() + 1000 * (ttl or 60)
+        expires: Date.now() + 1000 * ttl
       }
       options = {upsert: true, safe: true}
       @collection.update query, item, options, (err) ->
