@@ -1,21 +1,18 @@
 {
-  "name": "mongo-cache",
+  "name": "node-mongo-cache",
   "description": "Simple MongoDB Cache for nodejs",
-  "author": "Bryant Williams <b.n.williams@gmail.com>",
+  "author": "Kyle Chamberlain <kchamb3@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/scien/node-mongo-cache.git"
+    "url": "https://github.com/Koleok/node-mongo-cache.git"
   },
   "scripts": {
-    "start":    "cake start",
-    "stop":     "cake stop",
-    "test":     "cake test"
+    "start": "node ./lib/index"
   },
   "dependencies": {
-    "coffee-script":  "1.7.x",
-    "deepmerge": "0.2.x",
-    "mongodb": "1.4.x"
+    "curry": "^1.2.0",
+    "mongodb": "^2.1.21"
   },
   "main": "./lib/index",
-  "version": "1.0.3"
+  "version": "1.0.0"
 }
