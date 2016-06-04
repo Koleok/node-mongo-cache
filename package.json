@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "curry": "^1.2.0",
-    "promised-mongo": "^1.2.0"
+    "es6-promisify-all": "^0.1.0",
+    "mongojs": "^2.4.0"
   },
   "main": "./lib/index",
   "version": "1.0.0"
