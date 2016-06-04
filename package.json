@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "curry": "^1.2.0",
-    "mongodb": "^2.1.21"
+    "promised-mongo": "github:mindeavor/promised-mongo"
   },
   "main": "./lib/index",
   "version": "1.0.0"
