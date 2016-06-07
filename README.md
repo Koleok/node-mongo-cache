@@ -7,9 +7,9 @@ npm install node-mongo-cache
 
 ## Examples
 ```javascript
-const MongoCache = require('../lib')
+const mongoCache = require('../lib')
 
-const cache = new MongoCache({
+const cache = mongoCache({
   collection: 'cache',
   db: 'test',
   host: 'localhost',
@@ -18,12 +18,14 @@ const cache = new MongoCache({
   user: 'admin'
 });
 
-cache.set('hello', 'world', 10, (err, value) => {
-  console.log('set', err, value);
-
-  return cache.get('hello', (err, value) => {
-    console.log('get', err, value);
+cache.set('hello', 'world', 10)
+  .then(value => {
+    console.log('set -- ', value);
+    return cache.get('hello');
+  })
+  .then(value => {
+    console.log('get -- (should be "world")', value);
     return process.exit(0);
-  });
-});
+  })
+  .catch(err => console.log('any error', err));
 ```
